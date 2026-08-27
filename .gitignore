@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.cookie
+*.cookies
+secrets/
+
+# Runtime data, cache, logs
+logs/
+*.log
+uploads/
+covers/
+static/
+data/
+data_PDF/
+drug_data/
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Experiment outputs and local caches
+backend/experiments/data/
+backend/experiments/results/
+backend/rag/cache/
+backend/rag/reports/
+backend/rag/ingest_state/
+backend/rag/tmp_seed_pdfs/
+backend/rag/tmp_seed_retry_pdfs/
+backend/.pip-tmp/
+backend/.rag-test-tmp/
+backend/.pytest-rag-v2/
+backend/.pytest-tmp/
+backend/pytest-cache-files-*/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo

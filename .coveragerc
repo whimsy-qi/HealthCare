@@ -1,0 +1,31 @@
+[run]
+branch = True
+source =
+    backend
+omit =
+    backend/.venv/*
+    backend/tests/*
+    backend/experiments/data/*
+    backend/experiments/results/*
+    backend/reports/*
+    backend/**/__pycache__/*
+    backend/data/*
+    backend/data_PDF/*
+    backend/drug_data/*
+    backend/uploads/*
+    backend/static/*
+    backend/covers/*
+
+[report]
+show_missing = True
+skip_empty = True
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    raise NotImplementedError
+
+[html]
+directory = backend/reports/coverage_html
+
+[json]
+output = backend/reports/coverage.json

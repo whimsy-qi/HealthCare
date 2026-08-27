@@ -1,0 +1,383 @@
+version: 2
+entries:
+  - source_id: nhc_official_guidelines
+    collection_key: guideline
+    title: National Basic Public Health Service Specification Third Edition
+    url: https://www.nhc.gov.cn/ewebeditor/uploadfile/2017/04/20170417104506514.pdf
+    source_type: guideline
+    source_tier: T1
+    department: primary_care
+    language: zh
+    license: public_government_document_review_required
+    ingest_mode: official_pdf
+    topic_tags: hypertension,diabetes,elderly,child_health,tuberculosis,public_health
+    priority: 1
+    organization: NHC
+    year: 2017
+  - source_id: nhc_official_guidelines
+    collection_key: guideline
+    title: NHC Myopia Prevention Technical Guideline 2021 Update
+    url: https://www.nhc.gov.cn/jkj/c100062/202110/a05ccaf5773a436486d2d79b59c0a5e9.shtml
+    source_type: guideline
+    source_tier: T1
+    department: ophthalmology
+    language: zh
+    license: public_government_document_review_required
+    ingest_mode: official_html
+    topic_tags: myopia,children,screening,prevention
+    priority: 2
+    organization: NHC
+    year: 2021
+  - source_id: who_guidelines
+    collection_key: guideline
+    title: WHO Guidelines Index
+    url: https://www.who.int/publications/guidelines/en/
+    source_type: guideline
+    source_tier: T1
+    department: public_health
+    language: en
+    license: document_level_who_terms
+    ingest_mode: official_html
+    topic_tags: who,guideline,public_health
+    priority: 3
+    organization: WHO
+  - source_id: uspstf_recommendations
+    collection_key: guideline
+    title: USPSTF Recommendation Topics
+    url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation-topics
+    source_type: guideline
+    source_tier: T1
+    department: preventive_medicine
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_recommendation_html
+    topic_tags: screening,prevention,recommendation_grade
+    priority: 4
+    organization: USPSTF
+  - source_id: uspstf_recommendations
+    collection_key: guideline
+    title: USPSTF Lung Cancer Screening
+    url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening
+    source_type: guideline
+    source_tier: T1
+    department: preventive_medicine
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_recommendation_html
+    topic_tags: lung_cancer,screening,ldct
+    priority: 4
+    organization: USPSTF
+  - source_id: uspstf_recommendations
+    collection_key: guideline
+    title: USPSTF Colorectal Cancer Screening
+    url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening
+    source_type: guideline
+    source_tier: T1
+    department: preventive_medicine
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_recommendation_html
+    topic_tags: colorectal_cancer,screening
+    priority: 4
+    organization: USPSTF
+  - source_id: uspstf_recommendations
+    collection_key: guideline
+    title: USPSTF Breast Cancer Screening
+    url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening
+    source_type: guideline
+    source_tier: T1
+    department: preventive_medicine
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_recommendation_html
+    topic_tags: breast_cancer,screening,mammography
+    priority: 4
+    organization: USPSTF
+  - source_id: uspstf_recommendations
+    collection_key: guideline
+    title: USPSTF Hypertension in Adults Screening
+    url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/hypertension-in-adults-screening
+    source_type: guideline
+    source_tier: T1
+    department: preventive_medicine
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_recommendation_html
+    topic_tags: hypertension,screening,adults
+    priority: 4
+    organization: USPSTF
+  - source_id: uspstf_recommendations
+    collection_key: guideline
+    title: USPSTF Prediabetes and Type 2 Diabetes Screening
+    url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-for-prediabetes-and-type-2-diabetes
+    source_type: guideline
+    source_tier: T1
+    department: preventive_medicine
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_recommendation_html
+    topic_tags: diabetes,screening,prediabetes
+    priority: 4
+    organization: USPSTF
+  - source_id: cdc_acip
+    collection_key: guideline
+    title: CDC ACIP Vaccine Recommendations
+    url: https://www.cdc.gov/acip/vaccine-recommendations/index.html
+    source_type: guideline
+    source_tier: T1
+    department: immunization
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: official_html
+    topic_tags: vaccine,immunization,contraindication,schedule
+    priority: 5
+    organization: CDC ACIP
+  - source_id: cdc_acip
+    collection_key: guideline
+    title: CDC Immunization Schedules
+    url: https://www.cdc.gov/vaccines/hcp/imz-schedules/index.html
+    source_type: guideline
+    source_tier: T1
+    department: immunization
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: official_html
+    topic_tags: vaccine,children,adult,schedule
+    priority: 5
+    organization: CDC
+  - source_id: ada_standards
+    collection_key: guideline
+    title: ADA Standards of Care Guidelines Resources
+    url: https://professional.diabetes.org/standards-of-care/practice-guidelines-resources
+    source_type: guideline
+    source_tier: T1
+    department: endocrinology
+    language: en
+    license: document_level_review_required
+    ingest_mode: official_html
+    topic_tags: diabetes,standards_of_care,diagnosis,treatment
+    priority: 6
+    organization: ADA
+  - source_id: gold_copd
+    collection_key: guideline
+    title: GOLD 2025 COPD Report
+    url: https://goldcopd.org/2025-gold-report/
+    source_type: guideline
+    source_tier: T1
+    department: pulmonology
+    language: en
+    license: document_level_review_required
+    ingest_mode: official_html
+    topic_tags: copd,diagnosis,treatment,exacerbation
+    priority: 6
+    organization: GOLD
+    year: 2025
+  - source_id: gina_asthma
+    collection_key: guideline
+    title: GINA 2025 Strategy Report
+    url: https://ginasthma.org/2025-gina-strategy-report/
+    source_type: guideline
+    source_tier: T1
+    department: pulmonology
+    language: en
+    license: document_level_review_required
+    ingest_mode: official_html
+    topic_tags: asthma,diagnosis,treatment,exacerbation
+    priority: 6
+    organization: GINA
+    year: 2025
+  - source_id: kdigo_guidelines
+    collection_key: guideline
+    title: KDIGO 2024 CKD Guideline
+    url: https://kdigo.org/kdigo-announces-publication-of-2024-ckd-guideline/
+    source_type: guideline
+    source_tier: T1
+    department: nephrology
+    language: en
+    license: document_level_review_required
+    ingest_mode: official_html
+    topic_tags: chronic_kidney_disease,ckd,diagnosis,treatment
+    priority: 6
+    organization: KDIGO
+    year: 2024
+  - source_id: idsa_guidelines
+    collection_key: guideline
+    title: IDSA Practice Guidelines Index
+    url: https://www.idsociety.org/practice-guideline/practice-guidelines/
+    source_type: guideline
+    source_tier: T1
+    department: infectious_disease
+    language: en
+    license: document_level_review_required
+    ingest_mode: official_html
+    topic_tags: infectious_disease,antibiotics,guideline
+    priority: 7
+    organization: IDSA
+  - source_id: ahrq_epc_reports
+    collection_key: literature
+    title: AHRQ Effective Health Care Evidence Reports
+    url: https://effectivehealthcare.ahrq.gov/
+    source_type: literature
+    source_tier: T2
+    department: evidence_based_medicine
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: evidence_report_html
+    topic_tags: systematic_review,evidence_report,benefits_harms
+    priority: 8
+    organization: AHRQ
+  - source_id: cochrane_reviews
+    collection_key: literature
+    title: Cochrane Library Reviews
+    url: https://www.cochranelibrary.com/cdsr/reviews
+    source_type: literature
+    source_tier: T2
+    department: evidence_based_medicine
+    language: en
+    license: abstract_or_summary_only_review_required
+    ingest_mode: evidence_report_html
+    topic_tags: systematic_review,benefits_harms
+    priority: 9
+    organization: Cochrane
+  - source_id: epistemonikos_reviews
+    collection_key: literature
+    title: Epistemonikos Evidence Summaries
+    url: https://www.epistemonikos.org/
+    source_type: literature
+    source_tier: T2
+    department: evidence_based_medicine
+    language: en
+    license: api_or_page_terms_review_required
+    ingest_mode: manifest_only_until_licensed
+    topic_tags: systematic_review,evidence_summary
+    priority: 10
+    organization: Epistemonikos
+  - source_id: nci_pdq
+    collection_key: cancer_evidence
+    title: NCI PDQ Professional Cancer Information Summaries
+    url: https://www.cancer.gov/publications/pdq/information-summaries
+    source_type: literature
+    source_tier: T2
+    department: oncology
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_summary_html
+    topic_tags: cancer,treatment,screening,prevention,pdq
+    priority: 11
+    organization: NCI
+  - source_id: nci_pdq
+    collection_key: cancer_evidence
+    title: NCI PDQ Non-Small Cell Lung Cancer Treatment
+    url: https://www.cancer.gov/types/lung/hp/non-small-cell-lung-treatment-pdq
+    source_type: literature
+    source_tier: T2
+    department: oncology
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_summary_html
+    topic_tags: lung_cancer,treatment,pdq
+    priority: 11
+    organization: NCI
+  - source_id: nci_pdq
+    collection_key: cancer_evidence
+    title: NCI PDQ Breast Cancer Treatment
+    url: https://www.cancer.gov/types/breast/hp/breast-treatment-pdq
+    source_type: literature
+    source_tier: T2
+    department: oncology
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_summary_html
+    topic_tags: breast_cancer,treatment,pdq
+    priority: 11
+    organization: NCI
+  - source_id: nci_pdq
+    collection_key: cancer_evidence
+    title: NCI PDQ Colon Cancer Treatment
+    url: https://www.cancer.gov/types/colorectal/hp/colon-treatment-pdq
+    source_type: literature
+    source_tier: T2
+    department: oncology
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_summary_html
+    topic_tags: colorectal_cancer,treatment,pdq
+    priority: 11
+    organization: NCI
+  - source_id: nci_pdq
+    collection_key: cancer_evidence
+    title: NCI PDQ Prostate Cancer Treatment
+    url: https://www.cancer.gov/types/prostate/hp/prostate-treatment-pdq
+    source_type: literature
+    source_tier: T2
+    department: oncology
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_summary_html
+    topic_tags: prostate_cancer,treatment,pdq
+    priority: 11
+    organization: NCI
+  - source_id: nci_pdq
+    collection_key: cancer_evidence
+    title: NCI PDQ Cervical Cancer Treatment
+    url: https://www.cancer.gov/types/cervical/hp/cervical-treatment-pdq
+    source_type: literature
+    source_tier: T2
+    department: oncology
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_summary_html
+    topic_tags: cervical_cancer,treatment,pdq
+    priority: 11
+    organization: NCI
+  - source_id: nci_pdq
+    collection_key: cancer_evidence
+    title: NCI PDQ Cancer Complementary and Alternative Medicine
+    url: https://www.cancer.gov/about-cancer/treatment/cam/hp
+    source_type: literature
+    source_tier: T2
+    department: oncology
+    language: en
+    license: public_us_government_review_required
+    ingest_mode: structured_summary_html
+    topic_tags: cancer,alternative_medicine,rumor_check,pdq
+    priority: 11
+    organization: NCI
+  - source_id: medlineplus_topics
+    collection_key: patient_education
+    title: MedlinePlus Health Topics XML
+    url: https://medlineplus.gov/xml/mplus_topics_2026-05-05.xml
+    source_type: patient_education
+    source_tier: T3
+    department: patient_education
+    language: en
+    license: nlm_terms
+    ingest_mode: topic_xml_summary
+    topic_tags: patient_education,mesh,consumer_health
+    priority: 12
+    organization: MedlinePlus
+  - source_id: fda_faers_signal
+    collection_key: drug_safety_signal
+    title: openFDA FAERS Adverse Event API
+    url: https://open.fda.gov/apis/drug/event/
+    source_type: drug_safety_signal
+    source_tier: T2
+    department: pharmacy
+    language: en
+    license: openFDA_terms
+    ingest_mode: aggregate_signal
+    topic_tags: adverse_event,faers,causality_not_established
+    priority: 13
+    organization: openFDA
+  - source_id: primekg
+    collection_key: kg
+    title: PrimeKG Release Repository
+    url: https://github.com/mims-harvard/PrimeKG
+    source_type: kg
+    source_tier: T2
+    department: graph
+    language: en
+    license: source_release_terms
+    ingest_mode: neo4j_graph
+    topic_tags: precision_medicine,knowledge_graph,drug_disease
+    priority: 14

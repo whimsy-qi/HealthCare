@@ -1,0 +1,103 @@
+version: 2
+default_max_results: 30
+queries:
+  - query_id: metformin_aging
+    query: metformin aging longevity
+    condition: aging
+    intervention: metformin
+    max_results: 30
+  - query_id: glp1_obesity
+    query: GLP-1 obesity weight loss semaglutide tirzepatide
+    condition: obesity
+    intervention: GLP-1 receptor agonist
+    max_results: 30
+  - query_id: semaglutide_obesity
+    query: semaglutide obesity weight loss
+    condition: obesity
+    intervention: semaglutide
+    max_results: 30
+  - query_id: tirzepatide_obesity
+    query: tirzepatide obesity weight loss
+    condition: obesity
+    intervention: tirzepatide
+    max_results: 30
+  - query_id: car_t_solid_tumor
+    query: CAR T solid tumor cancer
+    condition: solid tumor
+    intervention: CAR T
+    max_results: 30
+  - query_id: car_t_toxicity
+    query: CAR T cytokine release syndrome neurotoxicity
+    condition: cytokine release syndrome
+    intervention: CAR T
+    max_results: 30
+  - query_id: alzheimer_antibody
+    query: Alzheimer lecanemab donanemab monoclonal antibody
+    condition: Alzheimer disease
+    intervention: monoclonal antibody
+    max_results: 30
+  - query_id: vaccine_safety
+    query: vaccine safety autism
+    condition: vaccine adverse events
+    intervention: vaccine
+    max_results: 30
+  - query_id: ketogenic_cancer
+    query: ketogenic diet cancer
+    condition: cancer
+    intervention: ketogenic diet
+    max_results: 30
+  - query_id: supplement_cancer
+    query: dietary supplement cancer
+    condition: cancer
+    intervention: dietary supplement
+    max_results: 30
+  - query_id: hypertension_targets
+    query: hypertension blood pressure target intensive treatment
+    condition: hypertension
+    intervention: intensive blood pressure control
+    max_results: 30
+  - query_id: diabetes_sglt2
+    query: type 2 diabetes SGLT2 inhibitor cardiovascular kidney
+    condition: type 2 diabetes
+    intervention: SGLT2 inhibitor
+    max_results: 30
+  - query_id: copd_triple_therapy
+    query: COPD triple therapy inhaled corticosteroid LABA LAMA
+    condition: COPD
+    intervention: triple inhaler therapy
+    max_results: 30
+  - query_id: asthma_biologics
+    query: severe asthma biologic dupilumab mepolizumab benralizumab
+    condition: severe asthma
+    intervention: biologic therapy
+    max_results: 30
+  - query_id: lung_cancer_screening
+    query: lung cancer screening low dose CT
+    condition: lung cancer
+    intervention: low dose CT screening
+    max_results: 30
+  - query_id: breast_cancer_screening
+    query: breast cancer screening mammography
+    condition: breast cancer
+    intervention: mammography screening
+    max_results: 30
+  - query_id: colorectal_cancer_screening
+    query: colorectal cancer screening colonoscopy fecal immunochemical test
+    condition: colorectal cancer
+    intervention: screening
+    max_results: 30
+  - query_id: chronic_kidney_disease_sglt2
+    query: chronic kidney disease SGLT2 inhibitor
+    condition: chronic kidney disease
+    intervention: SGLT2 inhibitor
+    max_results: 30
+  - query_id: heart_failure_sglt2
+    query: heart failure SGLT2 inhibitor
+    condition: heart failure
+    intervention: SGLT2 inhibitor
+    max_results: 30
+  - query_id: gout_urate_lowering
+    query: gout urate lowering therapy
+    condition: gout
+    intervention: urate lowering therapy
+    max_results: 30

@@ -1,0 +1,7 @@
+.threads-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* 确保丝线层不会阻挡底层光晕，同时也能穿透鼠标事件给自身 */
+  pointer-events: auto; 
+}

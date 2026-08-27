@@ -1,0 +1,252 @@
+version: 2
+drugs:
+  - drug_id: metformin
+    display_name: metformin
+    chinese_name: erjiashuanggua
+    query: metformin
+    aliases: [Glucophage]
+  - drug_id: aspirin
+    display_name: aspirin
+    chinese_name: asipilin
+    query: aspirin
+    aliases: [acetylsalicylic acid, Bayer aspirin]
+  - drug_id: ibuprofen
+    display_name: ibuprofen
+    chinese_name: buluofen
+    query: ibuprofen
+    aliases: [Advil, Motrin]
+  - drug_id: clarithromycin
+    display_name: clarithromycin
+    chinese_name: kelameisu
+    query: clarithromycin
+    aliases: [Biaxin]
+  - drug_id: warfarin
+    display_name: warfarin
+    chinese_name: huafalin
+    query: warfarin
+    aliases: [Coumadin]
+  - drug_id: atorvastatin
+    display_name: atorvastatin
+    chinese_name: atuofatating
+    query: atorvastatin
+    aliases: [Lipitor, statin]
+  - drug_id: simvastatin
+    display_name: simvastatin
+    chinese_name: xinfatating
+    query: simvastatin
+    aliases: [Zocor, statin]
+  - drug_id: rosuvastatin
+    display_name: rosuvastatin
+    chinese_name: ruisufatating
+    query: rosuvastatin
+    aliases: [Crestor, statin]
+  - drug_id: pravastatin
+    display_name: pravastatin
+    chinese_name: pufatating
+    query: pravastatin
+    aliases: [Pravachol, statin]
+  - drug_id: amoxicillin
+    display_name: amoxicillin
+    chinese_name: amoxilin
+    query: amoxicillin
+    aliases: [Amoxil]
+  - drug_id: amoxicillin_clavulanate
+    display_name: amoxicillin clavulanate
+    chinese_name: amoxilin_kelawusuan
+    query: amoxicillin clavulanate
+    aliases: [Augmentin]
+  - drug_id: azithromycin
+    display_name: azithromycin
+    chinese_name: aqimeisu
+    query: azithromycin
+    aliases: [Zithromax]
+  - drug_id: levofloxacin
+    display_name: levofloxacin
+    chinese_name: zuoyangfushaxing
+    query: levofloxacin
+    aliases: [Levaquin]
+  - drug_id: ciprofloxacin
+    display_name: ciprofloxacin
+    chinese_name: huanbingshaxing
+    query: ciprofloxacin
+    aliases: [Cipro]
+  - drug_id: cefixime
+    display_name: cefixime
+    chinese_name: toubaokewo
+    query: cefixime
+    aliases: [Suprax]
+  - drug_id: cefuroxime
+    display_name: cefuroxime
+    chinese_name: toubaofuxin
+    query: cefuroxime
+    aliases: [Ceftin]
+  - drug_id: omeprazole
+    display_name: omeprazole
+    chinese_name: aomeilazuo
+    query: omeprazole
+    aliases: [Prilosec]
+  - drug_id: pantoprazole
+    display_name: pantoprazole
+    chinese_name: pantuolazuo
+    query: pantoprazole
+    aliases: [Protonix]
+  - drug_id: famotidine
+    display_name: famotidine
+    chinese_name: famotiding
+    query: famotidine
+    aliases: [Pepcid]
+  - drug_id: nifedipine
+    display_name: nifedipine
+    chinese_name: xiaobendiping
+    query: nifedipine
+    aliases: [Procardia, Adalat]
+  - drug_id: amlodipine
+    display_name: amlodipine
+    chinese_name: anlvdiiping
+    query: amlodipine
+    aliases: [Norvasc]
+  - drug_id: lisinopril
+    display_name: lisinopril
+    chinese_name: lainuopuli
+    query: lisinopril
+    aliases: [Prinivil, Zestril]
+  - drug_id: losartan
+    display_name: losartan
+    chinese_name: loushatan
+    query: losartan
+    aliases: [Cozaar]
+  - drug_id: valsartan
+    display_name: valsartan
+    chinese_name: xieshatan
+    query: valsartan
+    aliases: [Diovan]
+  - drug_id: hydrochlorothiazide
+    display_name: hydrochlorothiazide
+    chinese_name: qinglvsaqin
+    query: hydrochlorothiazide
+    aliases: [HCTZ]
+  - drug_id: furosemide
+    display_name: furosemide
+    chinese_name: fusaemi
+    query: furosemide
+    aliases: [Lasix]
+  - drug_id: spironolactone
+    display_name: spironolactone
+    chinese_name: luoneizhi
+    query: spironolactone
+    aliases: [Aldactone]
+  - drug_id: metoprolol
+    display_name: metoprolol
+    chinese_name: meituoluoer
+    query: metoprolol
+    aliases: [Lopressor, Toprol]
+  - drug_id: bisoprolol
+    display_name: bisoprolol
+    chinese_name: bisuoluoer
+    query: bisoprolol
+    aliases: [Zebeta]
+  - drug_id: clopidogrel
+    display_name: clopidogrel
+    chinese_name: lvsuogelei
+    query: clopidogrel
+    aliases: [Plavix]
+  - drug_id: rivaroxaban
+    display_name: rivaroxaban
+    chinese_name: lifashaban
+    query: rivaroxaban
+    aliases: [Xarelto]
+  - drug_id: apixaban
+    display_name: apixaban
+    chinese_name: apishaban
+    query: apixaban
+    aliases: [Eliquis]
+  - drug_id: dabigatran
+    display_name: dabigatran
+    chinese_name: dabijiaqun
+    query: dabigatran
+    aliases: [Pradaxa]
+  - drug_id: acetaminophen
+    display_name: acetaminophen
+    chinese_name: duiyixiananjifen
+    query: acetaminophen
+    aliases: [paracetamol, Tylenol]
+  - drug_id: diclofenac
+    display_name: diclofenac
+    chinese_name: shuanglvfensuan
+    query: diclofenac
+    aliases: [Voltaren]
+  - drug_id: naproxen
+    display_name: naproxen
+    chinese_name: nailuosheng
+    query: naproxen
+    aliases: [Aleve]
+  - drug_id: prednisone
+    display_name: prednisone
+    chinese_name: qiangdisong
+    query: prednisone
+    aliases: [Deltasone]
+  - drug_id: dexamethasone
+    display_name: dexamethasone
+    chinese_name: disaimisong
+    query: dexamethasone
+    aliases: [Decadron]
+  - drug_id: insulin_glargine
+    display_name: insulin glargine
+    chinese_name: gancaoyidaosu
+    query: insulin glargine
+    aliases: [Lantus]
+  - drug_id: insulin_aspart
+    display_name: insulin aspart
+    chinese_name: mendongyidaosu
+    query: insulin aspart
+    aliases: [NovoLog]
+  - drug_id: gliclazide
+    display_name: gliclazide
+    chinese_name: geliqite
+    query: gliclazide
+    aliases: [sulfonylurea]
+  - drug_id: glimepiride
+    display_name: glimepiride
+    chinese_name: gelimeiniao
+    query: glimepiride
+    aliases: [Amaryl]
+  - drug_id: empagliflozin
+    display_name: empagliflozin
+    chinese_name: engegliflozin
+    query: empagliflozin
+    aliases: [Jardiance, SGLT2 inhibitor]
+  - drug_id: dapagliflozin
+    display_name: dapagliflozin
+    chinese_name: dagegliflozin
+    query: dapagliflozin
+    aliases: [Farxiga, SGLT2 inhibitor]
+  - drug_id: semaglutide
+    display_name: semaglutide
+    chinese_name: simaglutide
+    query: semaglutide
+    aliases: [Ozempic, Wegovy]
+  - drug_id: liraglutide
+    display_name: liraglutide
+    chinese_name: lilalutide
+    query: liraglutide
+    aliases: [Victoza, Saxenda]
+  - drug_id: allopurinol
+    display_name: allopurinol
+    chinese_name: biepiaochun
+    query: allopurinol
+    aliases: [Zyloprim]
+  - drug_id: colchicine
+    display_name: colchicine
+    chinese_name: qiushuixianjian
+    query: colchicine
+    aliases: [Colcrys]
+  - drug_id: alendronate
+    display_name: alendronate
+    chinese_name: alunlinsuan
+    query: alendronate
+    aliases: [Fosamax]
+  - drug_id: levothyroxine
+    display_name: levothyroxine
+    chinese_name: zuojiazhuangxiansu
+    query: levothyroxine
+    aliases: [Synthroid]

@@ -1,0 +1,245 @@
+Domain (6) x Act (5) x Attr (8) = 240 theoretical combinations
+Domain                    Act          Attr         Possible   Mapped     Example
+------------------------------------------------------------------------------------------------------------------------
+SYMPTOM_ANALYSIS          ASK          CAUSE        [Y]        [MAPPED]   -
+SYMPTOM_ANALYSIS          ASK          SYMPTOM      [Y]        [MAPPED]   -
+SYMPTOM_ANALYSIS          ASK          BASIC        [N]        [ - ]      -
+SYMPTOM_ANALYSIS          ASK          CHECKUP      [Y]        [MAPPED]   -
+SYMPTOM_ANALYSIS          ASK          VISIT        [Y]        [MAPPED]   -
+SYMPTOM_ANALYSIS          ASK          PREVENT      [N]        [ - ]      -
+SYMPTOM_ANALYSIS          ASK          DIAGNOSE     [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          ASK          CAUTION      [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          CONFIRM      CAUSE        [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          CONFIRM      SYMPTOM      [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          CONFIRM      BASIC        [N]        [ - ]      -
+SYMPTOM_ANALYSIS          CONFIRM      CHECKUP      [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          CONFIRM      VISIT        [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          CONFIRM      PREVENT      [N]        [ - ]      -
+SYMPTOM_ANALYSIS          CONFIRM      DIAGNOSE     [Y]        [ - ]      我这是不是偏头痛
+SYMPTOM_ANALYSIS          CONFIRM      CAUTION      [Y]        [MAPPED]   -
+SYMPTOM_ANALYSIS          SEEK_HELP    CAUSE        [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          SEEK_HELP    SYMPTOM      [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          SEEK_HELP    BASIC        [N]        [ - ]      -
+SYMPTOM_ANALYSIS          SEEK_HELP    CHECKUP      [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          SEEK_HELP    VISIT        [Y]        [MAPPED]   需要去医院吗
+SYMPTOM_ANALYSIS          SEEK_HELP    PREVENT      [N]        [ - ]      -
+SYMPTOM_ANALYSIS          SEEK_HELP    DIAGNOSE     [Y]        [MAPPED]   我头疼
+SYMPTOM_ANALYSIS          SEEK_HELP    CAUTION      [Y]        [MAPPED]   -
+SYMPTOM_ANALYSIS          DEBUNK       CAUSE        [N]        [ - ]      -
+SYMPTOM_ANALYSIS          DEBUNK       SYMPTOM      [N]        [ - ]      -
+SYMPTOM_ANALYSIS          DEBUNK       BASIC        [N]        [ - ]      -
+SYMPTOM_ANALYSIS          DEBUNK       CHECKUP      [N]        [ - ]      -
+SYMPTOM_ANALYSIS          DEBUNK       VISIT        [N]        [ - ]      -
+SYMPTOM_ANALYSIS          DEBUNK       PREVENT      [N]        [ - ]      -
+SYMPTOM_ANALYSIS          DEBUNK       DIAGNOSE     [N]        [ - ]      -
+SYMPTOM_ANALYSIS          DEBUNK       CAUTION      [N]        [ - ]      -
+SYMPTOM_ANALYSIS          ANALYZE      CAUSE        [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          ANALYZE      SYMPTOM      [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          ANALYZE      BASIC        [N]        [ - ]      -
+SYMPTOM_ANALYSIS          ANALYZE      CHECKUP      [Y]        [MAPPED]   -
+SYMPTOM_ANALYSIS          ANALYZE      VISIT        [Y]        [ - ]      -
+SYMPTOM_ANALYSIS          ANALYZE      PREVENT      [N]        [ - ]      -
+SYMPTOM_ANALYSIS          ANALYZE      DIAGNOSE     [Y]        [MAPPED]   我这些症状是什么病
+SYMPTOM_ANALYSIS          ANALYZE      CAUTION      [Y]        [ - ]      -
+MEDICATION_REVIEW         ASK          CAUSE        [Y]        [MAPPED]   -
+MEDICATION_REVIEW         ASK          SYMPTOM      [N]        [ - ]      -
+MEDICATION_REVIEW         ASK          BASIC        [Y]        [MAPPED]   布洛芬是什么药
+MEDICATION_REVIEW         ASK          CHECKUP      [Y]        [MAPPED]   -
+MEDICATION_REVIEW         ASK          VISIT        [N]        [ - ]      -
+MEDICATION_REVIEW         ASK          PREVENT      [N]        [ - ]      -
+MEDICATION_REVIEW         ASK          DIAGNOSE     [N]        [ - ]      -
+MEDICATION_REVIEW         ASK          CAUTION      [Y]        [ - ]      阿莫西林一天吃几次
+MEDICATION_REVIEW         CONFIRM      CAUSE        [Y]        [ - ]      -
+MEDICATION_REVIEW         CONFIRM      SYMPTOM      [N]        [ - ]      -
+MEDICATION_REVIEW         CONFIRM      BASIC        [Y]        [ - ]      -
+MEDICATION_REVIEW         CONFIRM      CHECKUP      [Y]        [ - ]      -
+MEDICATION_REVIEW         CONFIRM      VISIT        [N]        [ - ]      -
+MEDICATION_REVIEW         CONFIRM      PREVENT      [N]        [ - ]      -
+MEDICATION_REVIEW         CONFIRM      DIAGNOSE     [N]        [ - ]      -
+MEDICATION_REVIEW         CONFIRM      CAUTION      [Y]        [MAPPED]   高血压能吃布洛芬吗
+MEDICATION_REVIEW         SEEK_HELP    CAUSE        [Y]        [ - ]      -
+MEDICATION_REVIEW         SEEK_HELP    SYMPTOM      [N]        [ - ]      -
+MEDICATION_REVIEW         SEEK_HELP    BASIC        [Y]        [ - ]      -
+MEDICATION_REVIEW         SEEK_HELP    CHECKUP      [Y]        [ - ]      -
+MEDICATION_REVIEW         SEEK_HELP    VISIT        [N]        [ - ]      -
+MEDICATION_REVIEW         SEEK_HELP    PREVENT      [N]        [ - ]      -
+MEDICATION_REVIEW         SEEK_HELP    DIAGNOSE     [N]        [ - ]      -
+MEDICATION_REVIEW         SEEK_HELP    CAUTION      [Y]        [MAPPED]   有什么药能治头痛
+MEDICATION_REVIEW         DEBUNK       CAUSE        [N]        [ - ]      -
+MEDICATION_REVIEW         DEBUNK       SYMPTOM      [N]        [ - ]      -
+MEDICATION_REVIEW         DEBUNK       BASIC        [N]        [ - ]      -
+MEDICATION_REVIEW         DEBUNK       CHECKUP      [N]        [ - ]      -
+MEDICATION_REVIEW         DEBUNK       VISIT        [N]        [ - ]      -
+MEDICATION_REVIEW         DEBUNK       PREVENT      [N]        [ - ]      -
+MEDICATION_REVIEW         DEBUNK       DIAGNOSE     [N]        [ - ]      -
+MEDICATION_REVIEW         DEBUNK       CAUTION      [N]        [ - ]      -
+MEDICATION_REVIEW         ANALYZE      CAUSE        [N]        [ - ]      -
+MEDICATION_REVIEW         ANALYZE      SYMPTOM      [N]        [ - ]      -
+MEDICATION_REVIEW         ANALYZE      BASIC        [N]        [ - ]      -
+MEDICATION_REVIEW         ANALYZE      CHECKUP      [N]        [ - ]      -
+MEDICATION_REVIEW         ANALYZE      VISIT        [N]        [ - ]      -
+MEDICATION_REVIEW         ANALYZE      PREVENT      [N]        [ - ]      -
+MEDICATION_REVIEW         ANALYZE      DIAGNOSE     [N]        [ - ]      -
+MEDICATION_REVIEW         ANALYZE      CAUTION      [N]        [ - ]      -
+RUMOR_VERIFICATION        ASK          CAUSE        [Y]        [MAPPED]   -
+RUMOR_VERIFICATION        ASK          SYMPTOM      [N]        [ - ]      -
+RUMOR_VERIFICATION        ASK          BASIC        [Y]        [MAPPED]   -
+RUMOR_VERIFICATION        ASK          CHECKUP      [N]        [ - ]      -
+RUMOR_VERIFICATION        ASK          VISIT        [N]        [ - ]      -
+RUMOR_VERIFICATION        ASK          PREVENT      [Y]        [MAPPED]   -
+RUMOR_VERIFICATION        ASK          DIAGNOSE     [Y]        [ - ]      -
+RUMOR_VERIFICATION        ASK          CAUTION      [Y]        [ - ]      -
+RUMOR_VERIFICATION        CONFIRM      CAUSE        [Y]        [ - ]      熬夜真的致癌吗
+RUMOR_VERIFICATION        CONFIRM      SYMPTOM      [N]        [ - ]      -
+RUMOR_VERIFICATION        CONFIRM      BASIC        [Y]        [ - ]      -
+RUMOR_VERIFICATION        CONFIRM      CHECKUP      [N]        [ - ]      -
+RUMOR_VERIFICATION        CONFIRM      VISIT        [N]        [ - ]      -
+RUMOR_VERIFICATION        CONFIRM      PREVENT      [Y]        [ - ]      -
+RUMOR_VERIFICATION        CONFIRM      DIAGNOSE     [Y]        [ - ]      -
+RUMOR_VERIFICATION        CONFIRM      CAUTION      [Y]        [MAPPED]   -
+RUMOR_VERIFICATION        SEEK_HELP    CAUSE        [N]        [ - ]      -
+RUMOR_VERIFICATION        SEEK_HELP    SYMPTOM      [N]        [ - ]      -
+RUMOR_VERIFICATION        SEEK_HELP    BASIC        [N]        [ - ]      -
+RUMOR_VERIFICATION        SEEK_HELP    CHECKUP      [N]        [ - ]      -
+RUMOR_VERIFICATION        SEEK_HELP    VISIT        [N]        [ - ]      -
+RUMOR_VERIFICATION        SEEK_HELP    PREVENT      [N]        [ - ]      -
+RUMOR_VERIFICATION        SEEK_HELP    DIAGNOSE     [N]        [ - ]      -
+RUMOR_VERIFICATION        SEEK_HELP    CAUTION      [N]        [ - ]      -
+RUMOR_VERIFICATION        DEBUNK       CAUSE        [Y]        [MAPPED]   手机辐射致癌吗
+RUMOR_VERIFICATION        DEBUNK       SYMPTOM      [N]        [ - ]      -
+RUMOR_VERIFICATION        DEBUNK       BASIC        [Y]        [MAPPED]   微波炉加热致癌吗
+RUMOR_VERIFICATION        DEBUNK       CHECKUP      [N]        [ - ]      -
+RUMOR_VERIFICATION        DEBUNK       VISIT        [N]        [ - ]      -
+RUMOR_VERIFICATION        DEBUNK       PREVENT      [Y]        [ - ]      -
+RUMOR_VERIFICATION        DEBUNK       DIAGNOSE     [Y]        [ - ]      -
+RUMOR_VERIFICATION        DEBUNK       CAUTION      [Y]        [ - ]      -
+RUMOR_VERIFICATION        ANALYZE      CAUSE        [N]        [ - ]      -
+RUMOR_VERIFICATION        ANALYZE      SYMPTOM      [N]        [ - ]      -
+RUMOR_VERIFICATION        ANALYZE      BASIC        [N]        [ - ]      -
+RUMOR_VERIFICATION        ANALYZE      CHECKUP      [N]        [ - ]      -
+RUMOR_VERIFICATION        ANALYZE      VISIT        [N]        [ - ]      -
+RUMOR_VERIFICATION        ANALYZE      PREVENT      [N]        [ - ]      -
+RUMOR_VERIFICATION        ANALYZE      DIAGNOSE     [N]        [ - ]      -
+RUMOR_VERIFICATION        ANALYZE      CAUTION      [N]        [ - ]      -
+REPORT_INTERPRETATION     ASK          CAUSE        [N]        [ - ]      -
+REPORT_INTERPRETATION     ASK          SYMPTOM      [N]        [ - ]      -
+REPORT_INTERPRETATION     ASK          BASIC        [N]        [ - ]      -
+REPORT_INTERPRETATION     ASK          CHECKUP      [N]        [ - ]      -
+REPORT_INTERPRETATION     ASK          VISIT        [N]        [ - ]      -
+REPORT_INTERPRETATION     ASK          PREVENT      [N]        [ - ]      -
+REPORT_INTERPRETATION     ASK          DIAGNOSE     [N]        [ - ]      -
+REPORT_INTERPRETATION     ASK          CAUTION      [N]        [ - ]      -
+REPORT_INTERPRETATION     CONFIRM      CAUSE        [N]        [ - ]      -
+REPORT_INTERPRETATION     CONFIRM      SYMPTOM      [N]        [ - ]      -
+REPORT_INTERPRETATION     CONFIRM      BASIC        [Y]        [ - ]      -
+REPORT_INTERPRETATION     CONFIRM      CHECKUP      [Y]        [ - ]      -
+REPORT_INTERPRETATION     CONFIRM      VISIT        [N]        [ - ]      -
+REPORT_INTERPRETATION     CONFIRM      PREVENT      [N]        [ - ]      -
+REPORT_INTERPRETATION     CONFIRM      DIAGNOSE     [Y]        [ - ]      这是不是脂肪肝
+REPORT_INTERPRETATION     CONFIRM      CAUTION      [Y]        [MAPPED]   -
+REPORT_INTERPRETATION     SEEK_HELP    CAUSE        [N]        [ - ]      -
+REPORT_INTERPRETATION     SEEK_HELP    SYMPTOM      [N]        [ - ]      -
+REPORT_INTERPRETATION     SEEK_HELP    BASIC        [N]        [ - ]      -
+REPORT_INTERPRETATION     SEEK_HELP    CHECKUP      [N]        [ - ]      -
+REPORT_INTERPRETATION     SEEK_HELP    VISIT        [N]        [ - ]      -
+REPORT_INTERPRETATION     SEEK_HELP    PREVENT      [N]        [ - ]      -
+REPORT_INTERPRETATION     SEEK_HELP    DIAGNOSE     [N]        [ - ]      -
+REPORT_INTERPRETATION     SEEK_HELP    CAUTION      [N]        [ - ]      -
+REPORT_INTERPRETATION     DEBUNK       CAUSE        [N]        [ - ]      -
+REPORT_INTERPRETATION     DEBUNK       SYMPTOM      [N]        [ - ]      -
+REPORT_INTERPRETATION     DEBUNK       BASIC        [N]        [ - ]      -
+REPORT_INTERPRETATION     DEBUNK       CHECKUP      [N]        [ - ]      -
+REPORT_INTERPRETATION     DEBUNK       VISIT        [N]        [ - ]      -
+REPORT_INTERPRETATION     DEBUNK       PREVENT      [N]        [ - ]      -
+REPORT_INTERPRETATION     DEBUNK       DIAGNOSE     [N]        [ - ]      -
+REPORT_INTERPRETATION     DEBUNK       CAUTION      [N]        [ - ]      -
+REPORT_INTERPRETATION     ANALYZE      CAUSE        [N]        [ - ]      -
+REPORT_INTERPRETATION     ANALYZE      SYMPTOM      [N]        [ - ]      -
+REPORT_INTERPRETATION     ANALYZE      BASIC        [Y]        [ - ]      -
+REPORT_INTERPRETATION     ANALYZE      CHECKUP      [Y]        [MAPPED]   还需要做什么检查
+REPORT_INTERPRETATION     ANALYZE      VISIT        [N]        [ - ]      -
+REPORT_INTERPRETATION     ANALYZE      PREVENT      [N]        [ - ]      -
+REPORT_INTERPRETATION     ANALYZE      DIAGNOSE     [Y]        [MAPPED]   尿酸520什么问题
+REPORT_INTERPRETATION     ANALYZE      CAUTION      [Y]        [ - ]      -
+GENERAL_CONSULTATION      ASK          CAUSE        [Y]        [MAPPED]   高血压病因是什么
+GENERAL_CONSULTATION      ASK          SYMPTOM      [Y]        [MAPPED]   糖尿病有什么症状
+GENERAL_CONSULTATION      ASK          BASIC        [Y]        [MAPPED]   维生素D有什么作用
+GENERAL_CONSULTATION      ASK          CHECKUP      [Y]        [MAPPED]   怀孕初期做什么检查
+GENERAL_CONSULTATION      ASK          VISIT        [Y]        [MAPPED]   感冒挂什么科
+GENERAL_CONSULTATION      ASK          PREVENT      [Y]        [MAPPED]   怎么预防中风
+GENERAL_CONSULTATION      ASK          DIAGNOSE     [N]        [ - ]      -
+GENERAL_CONSULTATION      ASK          CAUTION      [Y]        [ - ]      -
+GENERAL_CONSULTATION      CONFIRM      CAUSE        [Y]        [ - ]      -
+GENERAL_CONSULTATION      CONFIRM      SYMPTOM      [Y]        [ - ]      -
+GENERAL_CONSULTATION      CONFIRM      BASIC        [Y]        [ - ]      -
+GENERAL_CONSULTATION      CONFIRM      CHECKUP      [Y]        [ - ]      -
+GENERAL_CONSULTATION      CONFIRM      VISIT        [Y]        [ - ]      -
+GENERAL_CONSULTATION      CONFIRM      PREVENT      [Y]        [ - ]      -
+GENERAL_CONSULTATION      CONFIRM      DIAGNOSE     [N]        [ - ]      -
+GENERAL_CONSULTATION      CONFIRM      CAUTION      [Y]        [MAPPED]   -
+GENERAL_CONSULTATION      SEEK_HELP    CAUSE        [Y]        [ - ]      -
+GENERAL_CONSULTATION      SEEK_HELP    SYMPTOM      [Y]        [ - ]      -
+GENERAL_CONSULTATION      SEEK_HELP    BASIC        [Y]        [ - ]      -
+GENERAL_CONSULTATION      SEEK_HELP    CHECKUP      [Y]        [ - ]      -
+GENERAL_CONSULTATION      SEEK_HELP    VISIT        [Y]        [MAPPED]   我这样需要去医院吗
+GENERAL_CONSULTATION      SEEK_HELP    PREVENT      [Y]        [ - ]      -
+GENERAL_CONSULTATION      SEEK_HELP    DIAGNOSE     [N]        [ - ]      -
+GENERAL_CONSULTATION      SEEK_HELP    CAUTION      [Y]        [MAPPED]   我血压160怎么办
+GENERAL_CONSULTATION      DEBUNK       CAUSE        [N]        [ - ]      -
+GENERAL_CONSULTATION      DEBUNK       SYMPTOM      [N]        [ - ]      -
+GENERAL_CONSULTATION      DEBUNK       BASIC        [N]        [ - ]      -
+GENERAL_CONSULTATION      DEBUNK       CHECKUP      [N]        [ - ]      -
+GENERAL_CONSULTATION      DEBUNK       VISIT        [N]        [ - ]      -
+GENERAL_CONSULTATION      DEBUNK       PREVENT      [N]        [ - ]      -
+GENERAL_CONSULTATION      DEBUNK       DIAGNOSE     [N]        [ - ]      -
+GENERAL_CONSULTATION      DEBUNK       CAUTION      [N]        [ - ]      -
+GENERAL_CONSULTATION      ANALYZE      CAUSE        [Y]        [ - ]      -
+GENERAL_CONSULTATION      ANALYZE      SYMPTOM      [Y]        [ - ]      -
+GENERAL_CONSULTATION      ANALYZE      BASIC        [Y]        [ - ]      -
+GENERAL_CONSULTATION      ANALYZE      CHECKUP      [Y]        [MAPPED]   -
+GENERAL_CONSULTATION      ANALYZE      VISIT        [Y]        [ - ]      -
+GENERAL_CONSULTATION      ANALYZE      PREVENT      [Y]        [ - ]      -
+GENERAL_CONSULTATION      ANALYZE      DIAGNOSE     [N]        [ - ]      -
+GENERAL_CONSULTATION      ANALYZE      CAUTION      [Y]        [ - ]      -
+CHITCHAT_OR_REJECT        ASK          CAUSE        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ASK          SYMPTOM      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ASK          BASIC        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ASK          CHECKUP      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ASK          VISIT        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ASK          PREVENT      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ASK          DIAGNOSE     [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ASK          CAUTION      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        CONFIRM      CAUSE        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        CONFIRM      SYMPTOM      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        CONFIRM      BASIC        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        CONFIRM      CHECKUP      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        CONFIRM      VISIT        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        CONFIRM      PREVENT      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        CONFIRM      DIAGNOSE     [N]        [ - ]      -
+CHITCHAT_OR_REJECT        CONFIRM      CAUTION      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        SEEK_HELP    CAUSE        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        SEEK_HELP    SYMPTOM      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        SEEK_HELP    BASIC        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        SEEK_HELP    CHECKUP      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        SEEK_HELP    VISIT        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        SEEK_HELP    PREVENT      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        SEEK_HELP    DIAGNOSE     [N]        [ - ]      -
+CHITCHAT_OR_REJECT        SEEK_HELP    CAUTION      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        DEBUNK       CAUSE        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        DEBUNK       SYMPTOM      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        DEBUNK       BASIC        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        DEBUNK       CHECKUP      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        DEBUNK       VISIT        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        DEBUNK       PREVENT      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        DEBUNK       DIAGNOSE     [N]        [ - ]      -
+CHITCHAT_OR_REJECT        DEBUNK       CAUTION      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ANALYZE      CAUSE        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ANALYZE      SYMPTOM      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ANALYZE      BASIC        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ANALYZE      CHECKUP      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ANALYZE      VISIT        [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ANALYZE      PREVENT      [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ANALYZE      DIAGNOSE     [N]        [ - ]      -
+CHITCHAT_OR_REJECT        ANALYZE      CAUTION      [N]        [ - ]      -
+
+Total possible: 87/240, mapped: 34/87

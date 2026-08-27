@@ -1,0 +1,366 @@
+{
+  "description": "医疗问诊消融实验测试集 —— 40 条中文主诉，覆盖多科室常见病",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "C01",
+      "department": "神经内科",
+      "query": "我最近老是头疼，太阳穴两边一跳一跳地疼，工作压力大的时候更严重，有时候还恶心",
+      "symptoms": ["搏动性头痛", "恶心", "压力诱发"],
+      "ground_truth": "偏头痛",
+      "differentials": ["紧张型头痛", "丛集性头痛"],
+      "severity": "mild"
+    },
+    {
+      "id": "C02",
+      "department": "心血管内科",
+      "query": "最近两个月总觉得胸口闷，爬楼梯到三楼就喘不上气，休息一会能缓解",
+      "symptoms": ["胸闷", "活动后气促", "休息可缓解"],
+      "ground_truth": "冠心病",
+      "differentials": ["心功能不全", "慢性阻塞性肺疾病"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C03",
+      "department": "消化内科",
+      "query": "吃完饭后总是胃胀、打嗝，有时候反酸水，已经持续半年了",
+      "symptoms": ["餐后胃胀", "打嗝", "反酸"],
+      "ground_truth": "胃食管反流病",
+      "differentials": ["慢性胃炎", "功能性消化不良"],
+      "severity": "mild"
+    },
+    {
+      "id": "C04",
+      "department": "呼吸内科",
+      "query": "咳嗽咳了两个星期了，一开始是干咳，现在有黄痰，早上起来特别严重",
+      "symptoms": ["持续性咳嗽", "黄痰", "晨起加重"],
+      "ground_truth": "急性支气管炎",
+      "differentials": ["肺炎", "上呼吸道感染"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C05",
+      "department": "内分泌科",
+      "query": "最近三个月瘦了十几斤，但吃得比以前还多，总是口渴想喝水，上厕所次数也多了",
+      "symptoms": ["体重下降", "多食", "多饮", "多尿"],
+      "ground_truth": "糖尿病",
+      "differentials": ["甲状腺功能亢进", "尿崩症"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C06",
+      "department": "皮肤科",
+      "query": "胳膊肘和膝盖上长了一片片的红色斑块，上面有银白色的皮屑，有时候会痒",
+      "symptoms": ["红色斑块", "银白色鳞屑", "瘙痒", "肘膝分布"],
+      "ground_truth": "银屑病",
+      "differentials": ["湿疹", "脂溢性皮炎"],
+      "severity": "mild"
+    },
+    {
+      "id": "C07",
+      "department": "骨科",
+      "query": "腰痛了半年多，早上起来特别僵硬，活动一下会好一点，但坐久了又会痛",
+      "symptoms": ["慢性腰痛", "晨僵", "活动后缓解", "久坐加重"],
+      "ground_truth": "腰椎间盘突出症",
+      "differentials": ["腰肌劳损", "强直性脊柱炎"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C08",
+      "department": "风湿免疫科",
+      "query": "手指关节早上起来又肿又痛，两只手都这样，要活动半小时才能缓解，已经三个月了",
+      "symptoms": ["对称性关节肿痛", "晨僵超过30分钟", "双手受累"],
+      "ground_truth": "类风湿关节炎",
+      "differentials": ["骨关节炎", "痛风性关节炎"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C09",
+      "department": "泌尿外科",
+      "query": "排尿的时候有灼烧感，还总觉得想上厕所但每次量不多，两天了",
+      "symptoms": ["尿痛", "尿频", "尿急"],
+      "ground_truth": "尿路感染",
+      "differentials": ["前列腺炎", "膀胱过度活动症"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C10",
+      "department": "耳鼻喉科",
+      "query": "鼻子堵了一个多月，早上打喷嚏流清鼻涕，闻到花粉或者灰尘的时候就加重",
+      "symptoms": ["鼻塞", "打喷嚏", "清水样鼻涕", "过敏原诱发"],
+      "ground_truth": "过敏性鼻炎",
+      "differentials": ["慢性鼻炎", "鼻窦炎"],
+      "severity": "mild"
+    },
+    {
+      "id": "C11",
+      "department": "神经内科",
+      "query": "左手时不时会发麻，尤其是骑电动车或者伏案工作久了之后，有时候麻到指头尖",
+      "symptoms": ["手部麻木", "姿势诱发", "放射至指尖"],
+      "ground_truth": "颈椎病",
+      "differentials": ["腕管综合征", "周围神经病变"],
+      "severity": "mild"
+    },
+    {
+      "id": "C12",
+      "department": "消化内科",
+      "query": "肚子右上方隐隐作痛，吃完饭或者吃了油腻的东西之后更明显，有时候连后背都酸",
+      "symptoms": ["右上腹痛", "油腻餐后加重", "放射至背部"],
+      "ground_truth": "胆囊炎",
+      "differentials": ["胆石症", "胃溃疡"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C13",
+      "department": "心血管内科",
+      "query": "这几天总觉得心跳得很快，特别是在安静的时候能听到自己的心跳声，有点心慌",
+      "symptoms": ["心悸", "心动过速", "安静时明显"],
+      "ground_truth": "心律失常",
+      "differentials": ["焦虑症", "甲状腺功能亢进"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C14",
+      "department": "呼吸内科",
+      "query": "从小就经常喘不上气，特别是晚上或者凌晨，呼吸的时候喉咙里有哨子声",
+      "symptoms": ["发作性喘息", "夜间加重", "哮鸣音"],
+      "ground_truth": "支气管哮喘",
+      "differentials": ["慢性阻塞性肺疾病", "心源性哮喘"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C15",
+      "department": "内分泌科",
+      "query": "脖子前面有点肿大，最近特别怕热、容易出汗，手伸直的时候会微微发抖",
+      "symptoms": ["颈部肿大", "怕热多汗", "手抖"],
+      "ground_truth": "甲状腺功能亢进",
+      "differentials": ["单纯性甲状腺肿", "亚急性甲状腺炎"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C16",
+      "department": "骨科",
+      "query": "膝盖上下楼梯的时候特别疼，有时候还能听到咔咔的声音，蹲下去也很困难，五十多岁了",
+      "symptoms": ["膝关节疼痛", "活动时加重", "关节弹响", "下蹲困难"],
+      "ground_truth": "膝骨关节炎",
+      "differentials": ["类风湿关节炎", "半月板损伤"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C17",
+      "department": "消化内科",
+      "query": "经常拉肚子和便秘交替，肚子还老是胀气不舒服，有时候左下腹隐隐作痛，工作压力大的时候更明显",
+      "symptoms": ["腹泻便秘交替", "腹胀", "左下腹痛", "压力加重"],
+      "ground_truth": "肠易激综合征",
+      "differentials": ["溃疡性结肠炎", "结肠癌"],
+      "severity": "mild"
+    },
+    {
+      "id": "C18",
+      "department": "皮肤科",
+      "query": "脸上和后背长了很多痘痘，红肿的那种，有些还有白色的脓头，已经半年多了",
+      "symptoms": ["面部和背部痤疮", "炎性丘疹", "脓疱"],
+      "ground_truth": "痤疮",
+      "differentials": ["毛囊炎", "玫瑰痤疮"],
+      "severity": "mild"
+    },
+    {
+      "id": "C19",
+      "department": "神经内科",
+      "query": "头晕了快一个月，感觉周围的东西在转，换个姿势就更明显，有时候还耳鸣",
+      "symptoms": ["眩晕", "姿势改变加重", "耳鸣"],
+      "ground_truth": "良性阵发性位置性眩晕",
+      "differentials": ["梅尼埃病", "前庭神经炎"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C20",
+      "department": "泌尿外科",
+      "query": "腰两侧隐隐作痛，小便颜色有点发红，排尿的时候有些刺痛，昨天开始的",
+      "symptoms": ["腰痛", "血尿", "排尿刺痛"],
+      "ground_truth": "肾结石",
+      "differentials": ["尿路感染", "肾盂肾炎"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C21",
+      "department": "心内科",
+      "query": "这两天总觉得左边胸口一阵阵地疼，像针扎一样，深呼吸的时候更难受，但不至于受不了",
+      "symptoms": ["左侧胸痛", "针刺样", "呼吸加重"],
+      "ground_truth": "肋间神经痛",
+      "differentials": ["心绞痛", "胸膜炎"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C22",
+      "department": "消化内科",
+      "query": "胃部总是有灼烧感，特别是在两餐之间和半夜，吃点东西反而能缓解",
+      "symptoms": ["胃部灼烧感", "空腹加重", "进食缓解", "夜间发作"],
+      "ground_truth": "十二指肠溃疡",
+      "differentials": ["胃溃疡", "胃食管反流病"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C23",
+      "department": "妇产科",
+      "query": "月经来之前一周乳房胀痛得厉害，小肚子也坠胀，脾气特别暴躁，月经来了以后就缓解了",
+      "symptoms": ["经前乳房胀痛", "下腹坠胀", "情绪波动", "经后缓解"],
+      "ground_truth": "经前期综合征",
+      "differentials": ["乳腺增生", "子宫内膜异位症"],
+      "severity": "mild"
+    },
+    {
+      "id": "C24",
+      "department": "眼科",
+      "query": "眼睛又干又涩，看电脑时间长了就模糊，眼睛里像有沙子一样，滴了眼药水也只能缓解一会",
+      "symptoms": ["眼干涩", "异物感", "视物模糊", "长时间用眼加重"],
+      "ground_truth": "干眼症",
+      "differentials": ["结膜炎", "视疲劳"],
+      "severity": "mild"
+    },
+    {
+      "id": "C25",
+      "department": "感染科",
+      "query": "发烧三天了，最高到39度，浑身酸痛没力气，嗓子也疼，但没有咳嗽",
+      "symptoms": ["高热", "全身酸痛", "乏力", "咽痛"],
+      "ground_truth": "流行性感冒",
+      "differentials": ["细菌性咽炎", "新冠肺炎"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C26",
+      "department": "骨科",
+      "query": "右肩膀抬不起来，特别是想举手拿高处东西的时候疼得不行，晚上睡觉压到也会疼醒，持续两个月了",
+      "symptoms": ["肩关节活动受限", "上举疼痛", "夜间痛"],
+      "ground_truth": "肩周炎",
+      "differentials": ["肩袖损伤", "颈椎病"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C27",
+      "department": "神经内科",
+      "query": "右边脸偶尔会突然抽一下，像有电流经过一样，说话吃饭的时候容易诱发，痛得不敢动",
+      "symptoms": ["面部阵发性剧痛", "电击样", "说话进食诱发"],
+      "ground_truth": "三叉神经痛",
+      "differentials": ["面肌痉挛", "牙源性疼痛"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C28",
+      "department": "风湿免疫科",
+      "query": "大脚趾关节突然红肿热痛，是昨天半夜开始的，痛得睡不着觉，以前也发作过一次",
+      "symptoms": ["单关节急性红肿热痛", "夜间发作", "大脚趾受累", "反复发作"],
+      "ground_truth": "痛风",
+      "differentials": ["假性痛风", "蜂窝织炎"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C29",
+      "department": "消化内科",
+      "query": "最近一个月大便颜色变黑了，像柏油一样，有时候还觉得头晕没力气，胃之前就不太舒服",
+      "symptoms": ["黑便", "柏油样便", "头晕乏力", "胃病史"],
+      "ground_truth": "上消化道出血",
+      "differentials": ["胃溃疡出血", "食管静脉曲张破裂"],
+      "severity": "severe"
+    },
+    {
+      "id": "C30",
+      "department": "心血管内科",
+      "query": "经常头晕，站起来的时候眼前发黑，量了血压发现低压有105，高压150左右",
+      "symptoms": ["头晕", "体位性黑矇", "血压升高"],
+      "ground_truth": "高血压病",
+      "differentials": ["肾性高血压", "白大衣高血压"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C31",
+      "department": "呼吸内科",
+      "query": "断断续续咳了一个多月，有时候痰里带一点血丝，最近还瘦了，下午老是觉得身上发热",
+      "symptoms": ["慢性咳嗽", "痰中带血", "体重下降", "午后发热"],
+      "ground_truth": "肺结核",
+      "differentials": ["肺癌", "支气管扩张"],
+      "severity": "severe"
+    },
+    {
+      "id": "C32",
+      "department": "耳鼻喉科",
+      "query": "耳朵里面疼了两天，还有东西流出来，听力也变差了一些，之前游泳了",
+      "symptoms": ["耳痛", "耳道分泌物", "听力下降", "游泳史"],
+      "ground_truth": "急性中耳炎",
+      "differentials": ["外耳道炎", "鼓膜穿孔"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C33",
+      "department": "皮肤科",
+      "query": "身上突然起了一大片红色的疙瘩，特别痒，越抓越多，昨天吃了海鲜后开始的",
+      "symptoms": ["全身红斑风团", "剧烈瘙痒", "食物诱因"],
+      "ground_truth": "荨麻疹",
+      "differentials": ["药疹", "多形红斑"],
+      "severity": "mild"
+    },
+    {
+      "id": "C34",
+      "department": "消化内科",
+      "query": "吃完饭就恶心想吐，特别是闻到油腻的味道就想吐，小便颜色变得很深像浓茶水",
+      "symptoms": ["恶心呕吐", "厌油", "尿色加深"],
+      "ground_truth": "急性肝炎",
+      "differentials": ["胆囊炎", "药物性肝损伤"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C35",
+      "department": "神经内科",
+      "query": "左边的脸昨天开始不太听使唤了，笑起来嘴是歪的，眼睛也闭不紧，但是没有手脚麻木",
+      "symptoms": ["单侧面瘫", "口角歪斜", "眼睑闭合不全", "无肢体症状"],
+      "ground_truth": "面神经炎",
+      "differentials": ["脑卒中", "带状疱疹Ramsay-Hunt综合征"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C36",
+      "department": "肾内科",
+      "query": "早上起来发现眼睑和小腿都肿了，小便泡沫很多不容易散，最近血压也偏高",
+      "symptoms": ["眼睑下肢水肿", "泡沫尿", "血压升高"],
+      "ground_truth": "肾小球肾炎",
+      "differentials": ["肾病综合征", "慢性肾功能不全"],
+      "severity": "severe"
+    },
+    {
+      "id": "C37",
+      "department": "血液科",
+      "query": "最近半年总是没精神，脸色发白，上两层楼就喘，指甲也变脆了容易断",
+      "symptoms": ["乏力", "面色苍白", "活动后气促", "指甲脆裂"],
+      "ground_truth": "缺铁性贫血",
+      "differentials": ["巨幼细胞性贫血", "再生障碍性贫血"],
+      "severity": "moderate"
+    },
+    {
+      "id": "C38",
+      "department": "神经内科",
+      "query": "入睡困难，躺床上脑子停不下来，翻来覆去两三个小时才能睡着，第二天头晕脑胀没精神，持续半年了",
+      "symptoms": ["入睡困难", "睡眠维持障碍", "日间功能障碍"],
+      "ground_truth": "失眠症",
+      "differentials": ["焦虑症", "抑郁症"],
+      "severity": "mild"
+    },
+    {
+      "id": "C39",
+      "department": "消化内科",
+      "query": "左下腹绞痛，已经三天没排便了，肚子胀得像鼓一样，放屁也放不出来",
+      "symptoms": ["腹痛", "便秘", "腹胀", "停止排气"],
+      "ground_truth": "肠梗阻",
+      "differentials": ["便秘", "结肠肿瘤"],
+      "severity": "severe"
+    },
+    {
+      "id": "C40",
+      "department": "眼科",
+      "query": "视力下降很快，看东西中间有一块黑斑，直线看起来变弯了，已经两个多月了",
+      "symptoms": ["视力下降", "中心暗点", "视物变形"],
+      "ground_truth": "年龄相关性黄斑变性",
+      "differentials": ["糖尿病视网膜病变", "视网膜脱离"],
+      "severity": "moderate"
+    }
+  ]
+}

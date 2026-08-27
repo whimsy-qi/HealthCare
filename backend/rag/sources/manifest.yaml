@@ -1,0 +1,312 @@
+version: 1
+sources:
+  - source_id: local_chinese_guidelines
+    name: Local Chinese clinical guidelines
+    source_type: guideline
+    authority_tier: T1
+    license: local_review_required
+    url: backend/data_PDF
+    department: multi_department
+    language: zh
+    refresh_policy: manual
+    allowed_ingest_mode: fulltext_local
+  - source_id: ncbi_pubmed
+    name: PubMed MEDLINE abstracts
+    source_type: pubmed
+    authority_tier: T2
+    license: NLM API terms
+    url: https://www.ncbi.nlm.nih.gov/books/NBK25499/
+    department: multi_department
+    language: en
+    refresh_policy: api_on_demand
+    allowed_ingest_mode: metadata_abstract
+  - source_id: pmc_open_access
+    name: PMC Open Access subset
+    source_type: pmc
+    authority_tier: T2
+    license: article_level_open_license
+    url: https://pmc.ncbi.nlm.nih.gov/tools/openftlist/
+    department: multi_department
+    language: en
+    refresh_policy: api_or_bulk_manifest
+    allowed_ingest_mode: open_license_fulltext
+  - source_id: dailymed_spl
+    name: DailyMed SPL drug labels
+    source_type: drug_label
+    authority_tier: T1
+    license: public_domain_us_government
+    url: https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm
+    department: pharmacy
+    language: en
+    refresh_policy: api_on_demand
+    allowed_ingest_mode: structured_label
+  - source_id: openfda_drug_label
+    name: openFDA drug labels
+    source_type: drug_label
+    authority_tier: T1
+    license: openFDA terms
+    url: https://open.fda.gov/apis/drug/label/
+    department: pharmacy
+    language: en
+    refresh_policy: api_on_demand
+    allowed_ingest_mode: structured_label
+  - source_id: rxnorm_rxnav
+    name: RxNorm RxNav normalization
+    source_type: rxnorm
+    authority_tier: T1
+    license: NLM API terms
+    url: https://lhncbc.nlm.nih.gov/RxNav/APIs/index.html
+    department: pharmacy
+    language: en
+    refresh_policy: api_on_demand
+    allowed_ingest_mode: metadata
+  - source_id: clinicaltrials_gov
+    name: ClinicalTrials.gov studies
+    source_type: clinical_trial
+    authority_tier: T2
+    license: public_api
+    url: https://clinicaltrials.gov/data-api/api
+    department: multi_department
+    language: en
+    refresh_policy: api_on_demand
+    allowed_ingest_mode: metadata_summary
+  - source_id: mesh
+    name: Medical Subject Headings
+    source_type: terminology
+    authority_tier: T1
+    license: NLM terms
+    url: https://www.nlm.nih.gov/mesh/meshhome.html
+    department: terminology
+    language: multilingual
+    refresh_policy: annual
+    allowed_ingest_mode: terminology
+  - source_id: local_diseasekg_json
+    name: Local Chinese DiseaseKG medical.json
+    source_type: kg
+    authority_tier: T3
+    license: local_review_required
+    url: backend/scripts/medical.json
+    department: multi_department
+    language: zh
+    refresh_policy: manual
+    allowed_ingest_mode: neo4j_graph
+  - source_id: local_drug_excel_kg_edges
+    name: Local Chinese drug Excel KG edges
+    source_type: kg
+    authority_tier: T3
+    license: local_review_required
+    url: backend/drug_data
+    department: pharmacy
+    language: zh
+    refresh_policy: manual
+    allowed_ingest_mode: neo4j_graph
+  - source_id: nhc_official_guidelines
+    name: NHC and gov.cn official Chinese guidelines
+    source_type: guideline
+    authority_tier: T1
+    license: public_government_document_review_required
+    url: https://www.nhc.gov.cn/
+    department: multi_department
+    language: zh
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: official_pdf_html
+  - source_id: who_guidelines
+    name: WHO guidelines and SMART guidelines
+    source_type: guideline
+    authority_tier: T1
+    license: document_level_who_terms
+    url: https://www.who.int/publications/guidelines/en/
+    department: multi_department
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: official_pdf_html
+  - source_id: nice_guidance
+    name: NICE guidance structured documents
+    source_type: guideline
+    authority_tier: T1
+    license: api_key_or_syndication_terms_required
+    url: https://www.nice.org.uk/reusing-our-content/nice-syndication-api
+    department: multi_department
+    language: en
+    refresh_policy: licensed_api
+    allowed_ingest_mode: manifest_only_until_licensed
+  - source_id: ahrq_epc_reports
+    name: AHRQ EPC and Effective Health Care evidence reports
+    source_type: literature
+    authority_tier: T2
+    license: public_us_government_review_required
+    url: https://effectivehealthcare.ahrq.gov/
+    department: multi_department
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: evidence_report_pdf_html
+  - source_id: uspstf_recommendations
+    name: USPSTF preventive service recommendations
+    source_type: guideline
+    authority_tier: T1
+    license: public_us_government_review_required
+    url: https://www.uspreventiveservicestaskforce.org/
+    department: preventive_medicine
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: structured_recommendation_html
+  - source_id: nci_pdq
+    name: NCI PDQ professional cancer information summaries
+    source_type: literature
+    authority_tier: T2
+    license: public_us_government_review_required
+    url: https://www.cancer.gov/publications/pdq/information-summaries
+    department: oncology
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: structured_summary_html
+  - source_id: seer_stats
+    name: SEER cancer statistics
+    source_type: statistics
+    authority_tier: T1
+    license: public_us_government_review_required
+    url: https://seer.cancer.gov/
+    department: oncology
+    language: en
+    refresh_policy: api_or_manual
+    allowed_ingest_mode: structured_statistics
+  - source_id: medlineplus_topics
+    name: MedlinePlus health topic XML
+    source_type: patient_education
+    authority_tier: T3
+    license: nlm_terms
+    url: https://medlineplus.gov/xml.html
+    department: multi_department
+    language: en
+    refresh_policy: daily_xml
+    allowed_ingest_mode: topic_xml_summary
+  - source_id: fda_faers_signal
+    name: openFDA FAERS adverse event safety signals
+    source_type: drug_safety_signal
+    authority_tier: T2
+    license: openFDA_terms
+    url: https://open.fda.gov/apis/drug/event/
+    department: pharmacy
+    language: en
+    refresh_policy: quarterly
+    allowed_ingest_mode: aggregate_signal
+  - source_id: cdc_acip
+    name: CDC ACIP vaccine recommendations and schedules
+    source_type: guideline
+    authority_tier: T1
+    license: public_us_government_review_required
+    url: https://www.cdc.gov/acip/vaccine-recommendations/index.html
+    department: immunization
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: official_pdf_html
+  - source_id: ada_standards
+    name: American Diabetes Association Standards of Care
+    source_type: guideline
+    authority_tier: T1
+    license: document_level_review_required
+    url: https://professional.diabetes.org/standards-of-care/practice-guidelines-resources
+    department: endocrinology
+    language: en
+    refresh_policy: annual_manual_seeded
+    allowed_ingest_mode: official_html
+  - source_id: gold_copd
+    name: GOLD COPD reports and pocket guides
+    source_type: guideline
+    authority_tier: T1
+    license: document_level_review_required
+    url: https://goldcopd.org/
+    department: pulmonology
+    language: en
+    refresh_policy: annual_manual_seeded
+    allowed_ingest_mode: official_html
+  - source_id: gina_asthma
+    name: GINA asthma strategy reports
+    source_type: guideline
+    authority_tier: T1
+    license: document_level_review_required
+    url: https://ginasthma.org/
+    department: pulmonology
+    language: en
+    refresh_policy: annual_manual_seeded
+    allowed_ingest_mode: official_html
+  - source_id: kdigo_guidelines
+    name: KDIGO kidney disease guidelines
+    source_type: guideline
+    authority_tier: T1
+    license: document_level_review_required
+    url: https://kdigo.org/guidelines/
+    department: nephrology
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: official_html
+  - source_id: idsa_guidelines
+    name: IDSA clinical practice guidelines
+    source_type: guideline
+    authority_tier: T1
+    license: document_level_review_required
+    url: https://www.idsociety.org/practice-guideline/practice-guidelines/
+    department: infectious_disease
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: official_html
+  - source_id: cochrane_reviews
+    name: Cochrane review abstracts and summaries
+    source_type: literature
+    authority_tier: T2
+    license: abstract_or_summary_only_review_required
+    url: https://www.cochranelibrary.com/
+    department: evidence_based_medicine
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: evidence_report_html
+  - source_id: epistemonikos_reviews
+    name: Epistemonikos evidence summaries
+    source_type: literature
+    authority_tier: T2
+    license: api_or_page_terms_review_required
+    url: https://www.epistemonikos.org/
+    department: evidence_based_medicine
+    language: en
+    refresh_policy: manual_seeded
+    allowed_ingest_mode: manifest_only_until_licensed
+  - source_id: icd11
+    name: WHO ICD-11 API terminology
+    source_type: terminology
+    authority_tier: T1
+    license: who_icd_api_key_terms_required
+    url: https://icd.who.int/icdapi
+    department: terminology
+    language: multilingual
+    refresh_policy: licensed_api
+    allowed_ingest_mode: terminology_api
+  - source_id: mondo
+    name: MONDO disease ontology
+    source_type: kg
+    authority_tier: T2
+    license: CC-BY-4.0
+    url: https://github.com/monarch-initiative/mondo
+    department: terminology
+    language: en
+    refresh_policy: release_sync
+    allowed_ingest_mode: neo4j_graph_ontology
+  - source_id: hpo
+    name: Human Phenotype Ontology
+    source_type: kg
+    authority_tier: T2
+    license: open_ontology_terms
+    url: https://hpo.jax.org/
+    department: terminology
+    language: en
+    refresh_policy: release_sync
+    allowed_ingest_mode: neo4j_graph_ontology
+  - source_id: primekg
+    name: PrimeKG precision medicine knowledge graph
+    source_type: kg
+    authority_tier: T2
+    license: source_release_terms
+    url: https://github.com/mims-harvard/PrimeKG
+    department: multi_department
+    language: en
+    refresh_policy: release_sync
+    allowed_ingest_mode: neo4j_graph

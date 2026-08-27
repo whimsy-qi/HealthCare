@@ -1,0 +1,178 @@
+version: 2
+default_max_results: 50
+queries:
+  - query_id: metformin_anti_aging
+    query: metformin aging longevity randomized trial systematic review
+    topic: metformin anti-aging
+    intent: latest_research
+    max_results: 50
+  - query_id: glp1_obesity_cv
+    query: GLP-1 receptor agonist obesity weight loss cardiovascular outcomes systematic review
+    topic: GLP-1 obesity cardiovascular outcomes
+    intent: latest_research
+    max_results: 50
+  - query_id: semaglutide_weight_loss
+    query: semaglutide obesity weight loss randomized controlled trial systematic review
+    topic: semaglutide weight loss
+    intent: latest_research
+    max_results: 50
+  - query_id: tirzepatide_obesity
+    query: tirzepatide obesity weight loss randomized controlled trial systematic review
+    topic: tirzepatide obesity
+    intent: latest_research
+    max_results: 50
+  - query_id: car_t_solid_tumor
+    query: CAR T therapy solid tumors clinical trial review
+    topic: CAR-T solid tumor
+    intent: latest_research
+    max_results: 50
+  - query_id: car_t_toxicity
+    query: CAR T cytokine release syndrome neurotoxicity management systematic review
+    topic: CAR-T toxicity
+    intent: latest_research
+    max_results: 50
+  - query_id: alzheimer_new_drugs
+    query: Alzheimer disease lecanemab donanemab randomized trial clinical trial
+    topic: Alzheimer disease new drugs
+    intent: latest_research
+    max_results: 50
+  - query_id: vaccine_autism_rumor
+    query: vaccines autism systematic review meta-analysis
+    topic: vaccine autism rumor
+    intent: rumor_check
+    max_results: 50
+  - query_id: vaccine_long_term_safety
+    query: vaccine long term safety systematic review cohort study
+    topic: vaccine long term safety
+    intent: rumor_check
+    max_results: 50
+  - query_id: cancer_alternative_medicine
+    query: alternative medicine cancer survival systematic review
+    topic: cancer alternative therapy
+    intent: rumor_check
+    max_results: 50
+  - query_id: ketogenic_diet_cancer
+    query: ketogenic diet cancer treatment systematic review clinical trial
+    topic: ketogenic diet cancer
+    intent: rumor_check
+    max_results: 50
+  - query_id: supplements_cancer_treatment
+    query: dietary supplements cancer treatment survival systematic review
+    topic: supplements cancer treatment
+    intent: rumor_check
+    max_results: 50
+  - query_id: hypertension_treatment_review
+    query: hypertension treatment blood pressure targets systematic review randomized trial
+    topic: hypertension treatment
+    intent: latest_research
+    max_results: 50
+  - query_id: hypertension_salt_reduction
+    query: salt reduction hypertension blood pressure systematic review randomized trial
+    topic: hypertension salt reduction
+    intent: latest_research
+    max_results: 50
+  - query_id: diabetes_sglt2_cv
+    query: SGLT2 inhibitors diabetes cardiovascular kidney outcomes systematic review
+    topic: diabetes SGLT2 outcomes
+    intent: latest_research
+    max_results: 50
+  - query_id: diabetes_glp1_kidney
+    query: GLP-1 receptor agonist diabetes kidney outcomes systematic review
+    topic: diabetes GLP-1 kidney outcomes
+    intent: latest_research
+    max_results: 50
+  - query_id: copd_triple_therapy
+    query: COPD triple therapy inhaled corticosteroid LABA LAMA systematic review
+    topic: COPD triple therapy
+    intent: latest_research
+    max_results: 50
+  - query_id: asthma_biologics
+    query: severe asthma biologics dupilumab mepolizumab benralizumab systematic review
+    topic: severe asthma biologics
+    intent: latest_research
+    max_results: 50
+  - query_id: statin_primary_prevention
+    query: statins primary prevention cardiovascular disease systematic review
+    topic: statin primary prevention
+    intent: latest_research
+    max_results: 50
+  - query_id: aspirin_primary_prevention
+    query: aspirin primary prevention cardiovascular disease bleeding systematic review
+    topic: aspirin primary prevention
+    intent: latest_research
+    max_results: 50
+  - query_id: warfarin_doac_interactions
+    query: warfarin direct oral anticoagulant drug interactions bleeding systematic review
+    topic: anticoagulant interactions
+    intent: latest_research
+    max_results: 50
+  - query_id: clarithromycin_statin_risk
+    query: clarithromycin statin interaction rhabdomyolysis systematic review cohort
+    topic: clarithromycin statin interaction
+    intent: latest_research
+    max_results: 50
+  - query_id: ibuprofen_cardiovascular_risk
+    query: ibuprofen NSAID cardiovascular risk systematic review
+    topic: ibuprofen cardiovascular risk
+    intent: latest_research
+    max_results: 50
+  - query_id: pediatric_influenza_antivirals
+    query: children influenza oseltamivir antiviral systematic review randomized trial
+    topic: pediatric influenza antivirals
+    intent: latest_research
+    max_results: 50
+  - query_id: chronic_gastritis_h_pylori
+    query: Helicobacter pylori chronic gastritis eradication systematic review
+    topic: chronic gastritis H pylori
+    intent: latest_research
+    max_results: 50
+  - query_id: gout_urate_lowering
+    query: gout urate lowering therapy treat to target systematic review
+    topic: gout urate lowering
+    intent: latest_research
+    max_results: 50
+  - query_id: osteoporosis_bisphosphonate
+    query: osteoporosis bisphosphonate fracture prevention systematic review randomized trial
+    topic: osteoporosis bisphosphonate
+    intent: latest_research
+    max_results: 50
+  - query_id: lung_cancer_screening_ldct
+    query: low dose CT lung cancer screening systematic review mortality
+    topic: lung cancer screening
+    intent: latest_research
+    max_results: 50
+  - query_id: breast_cancer_screening
+    query: breast cancer screening mammography systematic review mortality
+    topic: breast cancer screening
+    intent: latest_research
+    max_results: 50
+  - query_id: colorectal_cancer_screening
+    query: colorectal cancer screening colonoscopy fecal immunochemical test systematic review
+    topic: colorectal cancer screening
+    intent: latest_research
+    max_results: 50
+  - query_id: depression_ssri
+    query: major depression SSRI treatment systematic review randomized trial
+    topic: depression SSRI
+    intent: latest_research
+    max_results: 50
+  - query_id: insomnia_cbt_i
+    query: cognitive behavioral therapy insomnia systematic review randomized trial
+    topic: insomnia CBT-I
+    intent: latest_research
+    max_results: 50
+  - query_id: chronic_kidney_disease_sglt2
+    query: chronic kidney disease SGLT2 inhibitor randomized trial systematic review
+    topic: CKD SGLT2
+    intent: latest_research
+    max_results: 50
+  - query_id: heart_failure_sglt2
+    query: heart failure SGLT2 inhibitor randomized trial systematic review
+    topic: heart failure SGLT2
+    intent: latest_research
+    max_results: 50
+  - query_id: probiotics_children_diarrhea
+    query: probiotics children acute diarrhea systematic review randomized trial
+    topic: probiotics pediatric diarrhea
+    intent: latest_research
+    max_results: 50
